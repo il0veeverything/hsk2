@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#mode-selection {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option.correct {
+    background-color: #4CAF50; /* 緑色 */
+    border-color: #4CAF50;
+    color: white;
+}
+
+.option.incorrect {
+    background-color: #f44336; /* 赤色 */
+    border-color: #f44336;
+    color: white;
+}
+
+#result {
+    margin: 20px 0;
+    font-size: 1.2em;
+}

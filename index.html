@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国語クイズ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>中国語クイズへようこそ</h1>
+        <div id="mode-selection">
+            <h2>ゲームモードを選択してください</h2>
+            <button onclick="selectMode('pinyin')">中国語からピンイン</button>
+            <button onclick="selectMode('japanese')">中国語から日本語</button>
+        </div>
+        <div id="quiz-container" style="display:none;">
+            <p id="chinese-word"></p>
+            <div class="options">
+                <button class="option" onclick="checkAnswer(this)"></button>
+                <button class="option" onclick="checkAnswer(this)"></button>
+                <button class="option" onclick="checkAnswer(this)"></button>
+                <button class="option" onclick="checkAnswer(this)"></button>
+            </div>
+            <p id="result"></p>
+            <button onclick="nextQuestion()">次の問題へ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
